@@ -1,0 +1,19 @@
+{
+  "name": "thisject",
+  "version": "1.0.0",
+  "description": "Small utility for injecting multiple this",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/computationalabstraction/thisject.git"
+  },
+  "author": "Archan Patkar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/computationalabstraction/thisject/issues"
+  },
+  "homepage": "https://github.com/computationalabstraction/thisject#readme"
+}
