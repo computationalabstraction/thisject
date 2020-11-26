@@ -1,5 +1,5 @@
 function multiThis(func,...obj) {
-    let merged = new Proxy({ all: obj }, {
+    let merged = new Proxy({ all: obj, local:{} }, {
         set(target,key,value) {
             let o = undefined;
             for(let e of target.all) {
@@ -8,6 +8,8 @@ function multiThis(func,...obj) {
                     break;
                 }
             }
+            if(o === undefined && value !== undefined) 
+                o = target.local[key] = value;
             return o;
         },
         get(target,key) {
